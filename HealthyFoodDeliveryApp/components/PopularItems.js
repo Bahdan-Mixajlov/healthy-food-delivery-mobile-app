@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#808080",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 10,
+    marginTop: 20,
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
   headerTextContainer: {
     width: "90%",
     color: "#ffffff",
+    marginTop: 10,
     fontSize: 20,
     fontFamily: "Roboto-Medium",
     textAlign: "left",
