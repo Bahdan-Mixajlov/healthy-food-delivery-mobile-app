@@ -1,10 +1,26 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import Entypo from "@expo/vector-icons/Entypo";
+
 const Footer = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textContainer}>Footer template</Text>
+      <View style={styles.iconContainer}>
+        <FontAwesome5 name="home" size={24} color="white" />
+        <Text style={styles.textContainer}>Home</Text>
+      </View>
+
+      <View style={styles.iconContainer}>
+        <FontAwesome5 name="shopping-cart" size={24} color="white" />
+        <Text style={styles.textContainer}>Cart</Text>
+      </View>
+
+      <View style={styles.iconContainer}>
+        <Entypo name="menu" size={24} color="white" />
+        <Text style={styles.textContainer}>Settings</Text>
+      </View>
     </View>
   );
 };
@@ -16,13 +32,20 @@ const styles = StyleSheet.create({
     height: 50,
     alignContent: "center",
     alignItems: "center",
-    justifyContent: "center",
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
 
   textContainer: {
     color: "#ffffff",
-    fontSize: 20,
+    fontSize: 15,
     fontFamily: "Roboto-Medium",
+  },
+
+  iconContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 3,
   },
 });
 
