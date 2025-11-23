@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 const Footer = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textContainer}> Footer template</Text>
+      <Text style={styles.textContainer}>Footer template</Text>
     </View>
   );
 };
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     alignContent: "center",
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: "50",
   },
 
   textContainer: {

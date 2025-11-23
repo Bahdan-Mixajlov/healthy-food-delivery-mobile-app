@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 const PopularItems = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textContainer}>Popular Items</Text>
+      <Text style={styles.headerTextContainer}>Popular Items</Text>
 
       <View style={styles.itemsContainer}>
         <View style={styles.itemContainer}>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   itemsContainer: {
     flexDirection: "row",
     width: "100%",
-    height: 150,
+    height: 200,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -45,10 +45,18 @@ const styles = StyleSheet.create({
   itemContainer: {
     backgroundColor: "#2c323b",
     height: "80%",
-    width: "45%",
+    width: "50%",
     margin: 5,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  headerTextContainer: {
+    width: "90%",
+    color: "#ffffff",
+    fontSize: 20,
+    fontFamily: "Roboto-Medium",
+    textAlign: "left",
   },
 });
 

@@ -13,10 +13,10 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#494a49",
     width: "100%",
-    height: 40,
+    height: 80,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: "50",
+    paddingTop: 20,
   },
 
   textContainer: {
