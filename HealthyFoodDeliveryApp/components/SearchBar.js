@@ -1,22 +1,26 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Header = () => {
+import Ionicons from "@expo/vector-icons/Ionicons";
+
+const SearchBar = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textContainer}> Healthy Food Delivery</Text>
+      <Ionicons name="search" size={24} color="white" />
+      <Text style={styles.textContainer}>SearchBar</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#494a49",
-    width: "100%",
-    height: 40,
+    backgroundColor: "#4b525e",
+    flexDirection: "row",
+    height: 30,
+    margin: 5,
+    borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: "50",
   },
 
   textContainer: {
@@ -26,4 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Header;
+export default SearchBar;

@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Header = () => {
+const Footer = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textContainer}> Healthy Food Delivery</Text>
+      <Text style={styles.textContainer}> Footer template</Text>
     </View>
   );
 };
@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#494a49",
     width: "100%",
-    height: 40,
-    justifyContent: "center",
+    height: 50,
+    alignContent: "center",
     alignItems: "center",
+    justifyContent: "center",
     paddingTop: "50",
   },
 
@@ -26,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Header;
+export default Footer;

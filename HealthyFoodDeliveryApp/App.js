@@ -3,6 +3,10 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import Header from "./components/Header";
+import Offers from "./components/Offers";
+import SearchBar from "./components/SearchBar";
+import PopularItems from "./components/PopularItems";
+import Footer from "./components/Footer";
 import { useFonts } from "expo-font";
 
 export default function App() {
@@ -18,6 +22,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Header></Header>
+      <SearchBar></SearchBar>
+      <Offers></Offers>
+      <PopularItems></PopularItems>
+      <Footer></Footer>
       <StatusBar style="auto" />
     </View>
   );
