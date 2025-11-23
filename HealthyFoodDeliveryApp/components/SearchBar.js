@@ -1,13 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-import Ionicons from "@expo/vector-icons/Ionicons";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const SearchBar = () => {
   return (
     <View style={styles.container}>
-      <Ionicons name="search" size={24} color="white" />
-      <Text style={styles.textContainer}>SearchBar</Text>
+      <View style={styles.SearchBarItems}>
+        <FontAwesome name="search" size={24} color="white" />
+        <Text style={styles.textContainer}>SearchBar</Text>
+      </View>
     </View>
   );
 };
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
     height: 40,
     margin: 5,
     borderRadius: 5,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
 
@@ -27,6 +29,12 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     fontSize: 20,
     fontFamily: "Roboto-Medium",
+    margin: 10,
+  },
+
+  SearchBarItems: {
+    display: "inline",
+    margin: 20,
   },
 });
 

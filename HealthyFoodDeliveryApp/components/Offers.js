@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     margin: 5,
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 20,
   },
 
   headerTextContainer: {
