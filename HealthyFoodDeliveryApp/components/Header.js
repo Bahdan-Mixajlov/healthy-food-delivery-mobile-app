@@ -12,22 +12,21 @@ const Header = () => {
         <FontAwesome5
           name="map-marker-alt"
           size={24}
-          color="white"
+          color="#55a62d"
           class="marker"
         />
         <View style={styles.addressWrapper}>
           <Text style={styles.textContainer}>Address</Text>
-          <MaterialIcons name="expand-more" size={24} color="white" />
+          <MaterialIcons name="expand-more" size={24} color="black" />
         </View>
       </View>
-      <FontAwesome name="user-circle" size={24} color="white" />
+      <FontAwesome name="user-circle" size={24} color="#55a62d" />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#494a49",
     width: "100%",
     height: 80,
     justifyContent: "space-between",
@@ -35,10 +34,12 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     flexDirection: "row",
     paddingHorizontal: 20,
+    borderWidth: 1,
+    borderColor: "black",
   },
 
   textContainer: {
-    color: "#ffffff",
+    color: "black",
     fontSize: 15,
     fontFamily: "Roboto-Medium",
   },

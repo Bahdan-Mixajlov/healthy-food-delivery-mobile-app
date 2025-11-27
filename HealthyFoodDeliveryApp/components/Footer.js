@@ -8,17 +8,17 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="home" size={24} color="white" />
+        <FontAwesome5 name="home" size={24} color="#55a62d" />
         <Text style={styles.textContainer}>Home</Text>
       </View>
 
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="shopping-cart" size={24} color="white" />
+        <FontAwesome5 name="shopping-cart" size={24} color="#55a62d" />
         <Text style={styles.textContainer}>Cart</Text>
       </View>
 
       <View style={styles.iconContainer}>
-        <Entypo name="menu" size={24} color="white" />
+        <Entypo name="menu" size={24} color="#55a62d" />
         <Text style={styles.textContainer}>Settings</Text>
       </View>
     </View>
@@ -27,7 +27,6 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#494a49",
     width: "100%",
     height: 50,
     alignContent: "center",
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
   },
 
   textContainer: {
-    color: "#ffffff",
+    color: "black",
     fontSize: 15,
     fontFamily: "Roboto-Medium",
   },

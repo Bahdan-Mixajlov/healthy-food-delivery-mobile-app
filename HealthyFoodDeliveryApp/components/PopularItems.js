@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
 
 const PopularItems = () => {
   return (
@@ -8,10 +8,46 @@ const PopularItems = () => {
 
       <View style={styles.itemsContainer}>
         <View style={styles.itemContainer}>
-          <Text style={styles.textContainer}>Item</Text>
+          <Image
+            style={styles.itemImages}
+            source={{
+              uri: "https://img.freepik.com/premium-photo/fresh-vegan-buddha-bowl-white-background_711700-17766.jpg",
+            }}
+          />
+
+          <View style={styles.rowContainer}>
+            <Text style={styles.textContainer}>Buddha bowl</Text>
+            <Text style={styles.textContainer}>$5.00</Text>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <Button
+              title="Order"
+              color="#55a62d"
+              accessibilityLabel="Order this beautifull dish"
+            />
+          </View>
         </View>
         <View style={styles.itemContainer}>
-          <Text style={styles.textContainer}>Item</Text>
+          <Image
+            style={styles.itemImages}
+            source={{
+              uri: "https://media.istockphoto.com/id/1290024277/photo/fresh-healthy-salad-in-bowl.jpg?s=612x612&w=0&k=20&c=Ki2kjMjSuVUsDRoP5jNoXt4hWi1-_GRa0s7JKDoXTxo=",
+            }}
+          />
+
+          <View style={styles.rowContainer}>
+            <Text style={styles.textContainer}>Salad bowl</Text>
+            <Text style={styles.textContainer}>$3.50</Text>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <Button
+              title="Order"
+              color="#55a62d"
+              accessibilityLabel="Order this beautifull dish"
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -20,45 +56,66 @@ const PopularItems = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#808080",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
 
   textContainer: {
-    color: "#ffffff",
-    fontSize: 20,
+    color: "black",
+    fontSize: 14,
     fontFamily: "Roboto-Medium",
+    textAlign: "left",
   },
 
   itemsContainer: {
     flexDirection: "row",
     width: "100%",
     height: 200,
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
   },
 
   itemContainer: {
-    backgroundColor: "#2c323b",
+    //backgroundColor: "#4645",
     height: "80%",
-    width: "50%",
+    width: "48%",
     margin: 5,
-    justifyContent: "center",
-    alignItems: "center",
     borderRadius: 20,
+    flexDirection: "column",
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 1,
   },
 
   headerTextContainer: {
     width: "90%",
-    color: "#ffffff",
+    color: "black",
     marginTop: 10,
     fontSize: 20,
     fontFamily: "Roboto-Medium",
     textAlign: "left",
+  },
+
+  itemImages: {
+    width: "100%",
+    height: "70%",
+    resizeMode: "contain",
+  },
+
+  rowContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%",
+    paddingHorizontal: 5,
+  },
+
+  buttonContainer: {
+    transform: [{ scale: 0.8 }],
+    borderRadius: 10,
+    overflow: "hidden",
   },
 });
 
