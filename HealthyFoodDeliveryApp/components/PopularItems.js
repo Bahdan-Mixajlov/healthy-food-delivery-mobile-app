@@ -66,6 +66,7 @@ const PopularItems = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "white",
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 10,
@@ -99,10 +100,11 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 4,
     },
-    shadowOpacity: 0.5,
-    shadowRadius: 5,
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
+    elevation: 4,
   },
 
   headerTextContainer: {

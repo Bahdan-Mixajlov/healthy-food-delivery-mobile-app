@@ -7,6 +7,8 @@ import Offers from "./components/Offers";
 import SearchBar from "./components/SearchBar";
 import PopularItems from "./components/PopularItems";
 import Footer from "./components/Footer";
+import Categories from "./components/Categories";
+
 import { useFonts } from "expo-font";
 
 export default function App() {
@@ -24,6 +26,7 @@ export default function App() {
       <Header></Header>
       <SearchBar></SearchBar>
       <Offers></Offers>
+      <Categories></Categories>
       <PopularItems></PopularItems>
       <Footer></Footer>
       <StatusBar style="auto" />
@@ -34,6 +37,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f8f9fa",
   },
 });
