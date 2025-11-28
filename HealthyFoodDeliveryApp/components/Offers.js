@@ -38,6 +38,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
   },
 
   headerTextContainer: {
@@ -53,8 +60,6 @@ const styles = StyleSheet.create({
     height: "100%",
     borderRadius: 10,
     resizeMode: "stretch",
-    borderWidth: 1,
-    borderColor: "black",
   },
 });
 

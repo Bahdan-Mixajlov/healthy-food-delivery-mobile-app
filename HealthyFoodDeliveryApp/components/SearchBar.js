@@ -7,8 +7,8 @@ const SearchBar = () => {
   return (
     <View style={styles.container}>
       <View style={styles.SearchBarItems}>
-        <FontAwesome name="search" size={24} color="black" />
-        <Text style={styles.textContainer}>SearchBar</Text>
+        <FontAwesome name="search" size={24} color="#999999" />
+        <Text style={styles.textContainer}>Search dishes here</Text>
       </View>
     </View>
   );
@@ -16,18 +16,17 @@ const SearchBar = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#e8e8e8",
     flexDirection: "row",
     height: 40,
     margin: 5,
     borderRadius: 20,
-    borderColor: "black",
-    borderWidth: 1,
     justifyContent: "flex-start",
     alignItems: "center",
   },
 
   textContainer: {
-    color: "black",
+    color: "#999999",
     fontSize: 20,
     fontFamily: "Roboto-Medium",
     margin: 10,

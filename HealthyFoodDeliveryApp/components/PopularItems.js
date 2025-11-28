@@ -20,12 +20,17 @@ const PopularItems = () => {
             <Text style={styles.textContainer}>$5.00</Text>
           </View>
 
-          <View style={styles.buttonContainer}>
-            <Button
-              title="Order"
-              color="#55a62d"
-              accessibilityLabel="Order this beautifull dish"
-            />
+          <View style={styles.bottomRow}>
+            <Text style={styles.descriptionText}>
+              Fresh & Healthy, 350 kcal • Vegan{" "}
+            </Text>
+            <View style={styles.buttonContainer}>
+              <Button
+                title="Order"
+                color="#55a62d"
+                accessibilityLabel="Order this beautifull dish"
+              />
+            </View>
           </View>
         </View>
         <View style={styles.itemContainer}>
@@ -41,12 +46,17 @@ const PopularItems = () => {
             <Text style={styles.textContainer}>$3.50</Text>
           </View>
 
-          <View style={styles.buttonContainer}>
-            <Button
-              title="Order"
-              color="#55a62d"
-              accessibilityLabel="Order this beautifull dish"
-            />
+          <View style={styles.bottomRow}>
+            <Text style={styles.descriptionText}>
+              100% Organic, Healthy • 400g{" "}
+            </Text>
+            <View style={styles.buttonContainer}>
+              <Button
+                title="Order"
+                color="#55a62d"
+                accessibilityLabel="Order this beautifull dish"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -85,8 +95,14 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     flexDirection: "column",
     alignItems: "center",
-    borderColor: "black",
-    borderWidth: 1,
+    justifyContent: "space-between",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
   },
 
   headerTextContainer: {
@@ -100,7 +116,7 @@ const styles = StyleSheet.create({
 
   itemImages: {
     width: "100%",
-    height: "70%",
+    height: "65%",
     resizeMode: "contain",
   },
 
@@ -116,6 +132,21 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.8 }],
     borderRadius: 10,
     overflow: "hidden",
+  },
+
+  bottomRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%",
+    paddingHorizontal: 5,
+  },
+
+  descriptionText: {
+    color: "gray",
+    fontSize: 12,
+    fontFamily: "Roboto-Medium",
+    paddingHorizontal: 3,
   },
 });
 
