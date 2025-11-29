@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import Entypo from "@expo/vector-icons/Entypo";
@@ -13,28 +13,48 @@ const Categories = () => {
       <View style={styles.categoriesContainer}>
         <View style={styles.categorieContainer}>
           <View style={styles.pickedIconBackground}>
-            <Text style={{ fontSize: 30 }}>🥗</Text>
+            <Image
+              style={styles.iconImages}
+              source={{
+                uri: "https://cdn3d.iconscout.com/3d/premium/thumb/salad-3d-icon-png-download-10343036.png",
+              }}
+            />
           </View>
           <Text style={styles.textContainer}>Salads</Text>
         </View>
 
         <View style={styles.categorieContainer}>
           <View style={styles.iconBackground}>
-            <Text style={{ fontSize: 30 }}>🍹</Text>
+            <Image
+              style={styles.iconImages}
+              source={{
+                uri: "https://png.pngtree.com/png-vector/20250903/ourmid/pngtree-3d-smoothie-glass-icon-with-straw-healthy-lifestyle-vibe-png-image_17355900.webp",
+              }}
+            />
           </View>
           <Text style={styles.textContainer}>Drinks</Text>
         </View>
 
         <View style={styles.categorieContainer}>
           <View style={styles.iconBackground}>
-            <Text style={{ fontSize: 30 }}>🥝</Text>
+            <Image
+              style={styles.iconImages}
+              source={{
+                uri: "https://cdn3d.iconscout.com/3d/premium/thumb/avocado-fruit-3d-icon-png-download-4086698.png",
+              }}
+            />
           </View>
           <Text style={styles.textContainer}>Fruits</Text>
         </View>
 
         <View style={styles.categorieContainer}>
           <View style={styles.iconBackground}>
-            <Text style={{ fontSize: 30 }}>🍣</Text>
+            <Image
+              style={styles.iconImages}
+              source={{
+                uri: "https://cdn3d.iconscout.com/3d/premium/thumb/salmon-sashimi-3d-icon-png-download-11135775.png",
+              }}
+            />
           </View>
           <Text style={styles.textContainer}>Seafood</Text>
         </View>
@@ -82,7 +102,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
 
-    borderRadius: 30,
+    borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 5,
@@ -96,7 +116,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     backgroundColor: "#d5f0d9",
-    borderRadius: 30,
+    borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 5,
@@ -104,6 +124,12 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOpacity: 0.1,
     shadowRadius: 5,
+  },
+
+  iconImages: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "stretch",
   },
 });
 

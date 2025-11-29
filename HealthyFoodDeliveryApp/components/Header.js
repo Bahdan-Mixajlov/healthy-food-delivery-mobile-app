@@ -12,7 +12,7 @@ const Header = () => {
         <FontAwesome5
           name="map-marker-alt"
           size={24}
-          color="#55a62d"
+          color="#1AA041"
           class="marker"
         />
         <View style={styles.addressWrapper}>
@@ -20,7 +20,7 @@ const Header = () => {
           <MaterialIcons name="expand-more" size={24} color="black" />
         </View>
       </View>
-      <FontAwesome name="user-circle" size={24} color="#55a62d" />
+      <FontAwesome name="user-circle" size={24} color="#1AA041" />
     </View>
   );
 };

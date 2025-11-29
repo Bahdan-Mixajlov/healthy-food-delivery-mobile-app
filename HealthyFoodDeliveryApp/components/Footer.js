@@ -8,17 +8,17 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="home" size={24} color="#55a62d" />
+        <FontAwesome5 name="home" size={24} color="#1AA041" />
         <Text style={styles.textContainer}>Home</Text>
       </View>
 
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="shopping-cart" size={24} color="#55a62d" />
+        <FontAwesome5 name="shopping-cart" size={24} color="gray" />
         <Text style={styles.textContainer}>Cart</Text>
       </View>
 
       <View style={styles.iconContainer}>
-        <Entypo name="menu" size={24} color="#55a62d" />
+        <Entypo name="menu" size={24} color="gray" />
         <Text style={styles.textContainer}>Settings</Text>
       </View>
     </View>

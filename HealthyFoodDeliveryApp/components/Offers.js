@@ -9,9 +9,7 @@ const Offers = () => {
       <View style={styles.offerContainer}>
         <Image
           style={styles.offerImages}
-          source={{
-            uri: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fresh-healthy-food-menu-design-template-7d4daa678d01ed12fb42d431e383637f_screen.jpg?ts=1651134481",
-          }}
+          source={require("../assets/images/offer.png")}
         />
       </View>
     </View>
@@ -33,20 +31,12 @@ const styles = StyleSheet.create({
   },
 
   offerContainer: {
-    height: 220,
-    width: "80%",
+    height: 180,
+    width: "90%",
     margin: 5,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 20,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.4,
-    shadowRadius: 10,
-    elevation: 4,
   },
 
   headerTextContainer: {
@@ -61,7 +51,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     borderRadius: 10,
-    resizeMode: "stretch",
+    resizeMode: "cover",
   },
 });
 

@@ -11,13 +11,13 @@ const PopularItems = () => {
           <Image
             style={styles.itemImages}
             source={{
-              uri: "https://img.freepik.com/premium-photo/fresh-vegan-buddha-bowl-white-background_711700-17766.jpg",
+              uri: "https://static.vecteezy.com/system/resources/previews/030/768/176/non_2x/buddha-bowl-vegetarian-bowl-with-grains-veggies-and-protein-isolated-png.png",
             }}
           />
 
           <View style={styles.rowContainer}>
             <Text style={styles.textContainer}>Buddha bowl</Text>
-            <Text style={styles.textContainer}>$5.00</Text>
+            <Text style={styles.priceContainer}>$5.00</Text>
           </View>
 
           <View style={styles.bottomRow}>
@@ -27,7 +27,7 @@ const PopularItems = () => {
             <View style={styles.buttonContainer}>
               <Button
                 title="Order"
-                color="#55a62d"
+                color="#1AA041"
                 accessibilityLabel="Order this beautifull dish"
               />
             </View>
@@ -37,13 +37,13 @@ const PopularItems = () => {
           <Image
             style={styles.itemImages}
             source={{
-              uri: "https://media.istockphoto.com/id/1290024277/photo/fresh-healthy-salad-in-bowl.jpg?s=612x612&w=0&k=20&c=Ki2kjMjSuVUsDRoP5jNoXt4hWi1-_GRa0s7JKDoXTxo=",
+              uri: "https://img.pikbest.com/png-images/20240728/salad-healthy-green-vegetable-bowl-nutritious-_10685144.png!bw700",
             }}
           />
 
           <View style={styles.rowContainer}>
             <Text style={styles.textContainer}>Salad bowl</Text>
-            <Text style={styles.textContainer}>$3.50</Text>
+            <Text style={styles.priceContainer}>$3.50</Text>
           </View>
 
           <View style={styles.bottomRow}>
@@ -53,7 +53,7 @@ const PopularItems = () => {
             <View style={styles.buttonContainer}>
               <Button
                 title="Order"
-                color="#55a62d"
+                color="#1AA041"
                 accessibilityLabel="Order this beautifull dish"
               />
             </View>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   itemContainer: {
-    //backgroundColor: "#4645",
+    backgroundColor: "#f2f2f2",
     height: "80%",
     width: "48%",
     margin: 5,
@@ -97,14 +97,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.4,
-    shadowRadius: 10,
-    elevation: 4,
   },
 
   headerTextContainer: {
@@ -149,6 +141,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: "Roboto-Medium",
     paddingHorizontal: 3,
+  },
+
+  priceContainer: {
+    marginRight: 10,
+    fontFamily: "Roboto-Medium",
+    color: "#1AA041",
   },
 });
 
