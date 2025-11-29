@@ -1,5 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Button } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Button,
+  TouchableOpacity,
+} from "react-native";
+
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const PopularItems = () => {
   return (
@@ -25,11 +34,9 @@ const PopularItems = () => {
               Fresh & Healthy, 350 kcal • Vegan{" "}
             </Text>
             <View style={styles.buttonContainer}>
-              <Button
-                title="Order"
-                color="#1AA041"
-                accessibilityLabel="Order this beautifull dish"
-              />
+              <TouchableOpacity>
+                <FontAwesome name="plus" size={15} color="white" />
+              </TouchableOpacity>
             </View>
           </View>
         </View>
@@ -51,11 +58,9 @@ const PopularItems = () => {
               100% Organic, Healthy • 400g{" "}
             </Text>
             <View style={styles.buttonContainer}>
-              <Button
-                title="Order"
-                color="#1AA041"
-                accessibilityLabel="Order this beautifull dish"
-              />
+              <TouchableOpacity>
+                <FontAwesome name="plus" size={15} color="white" />
+              </TouchableOpacity>
             </View>
           </View>
         </View>
@@ -123,9 +128,13 @@ const styles = StyleSheet.create({
   },
 
   buttonContainer: {
-    transform: [{ scale: 0.8 }],
-    borderRadius: 10,
-    overflow: "hidden",
+    width: 30,
+    height: 30,
+    backgroundColor: "#1AA041",
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 5,
   },
 
   bottomRow: {
@@ -146,7 +155,7 @@ const styles = StyleSheet.create({
   priceContainer: {
     marginRight: 10,
     fontFamily: "Roboto-Medium",
-    color: "#1AA041",
+    color: "black",
   },
 });
 

@@ -8,18 +8,15 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="home" size={24} color="#1AA041" />
-        <Text style={styles.textContainer}>Home</Text>
+        <FontAwesome5 name="home" size={30} color="#1AA041" />
       </View>
 
       <View style={styles.iconContainer}>
-        <FontAwesome5 name="shopping-cart" size={24} color="gray" />
-        <Text style={styles.textContainer}>Cart</Text>
+        <FontAwesome5 name="shopping-cart" size={30} color="gray" />
       </View>
 
       <View style={styles.iconContainer}>
-        <Entypo name="menu" size={24} color="gray" />
-        <Text style={styles.textContainer}>Settings</Text>
+        <Entypo name="menu" size={30} color="gray" />
       </View>
     </View>
   );
@@ -27,12 +24,15 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
+    backgroundColor: "#f2f2f2",
+    width: "90%",
     height: 50,
     alignContent: "center",
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-around",
+    borderRadius: 50,
+    alignSelf: "center",
   },
 
   textContainer: {
