@@ -22,7 +22,7 @@ Follow these steps to get the application running locally.
 
 ```
 git clone https://github.com/Bahdan-Mixajlov/healthy-food-delivery-mobile-app.git
-cd healthy-food-delivery-app
+cd healthy-food-delivery-mobile-app
 ```
 ### 2. Install Dependencies
 
